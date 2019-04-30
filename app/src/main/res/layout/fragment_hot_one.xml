@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/brand_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+      />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#a9a6a6"/>
+    <TextView
+        android:id="@+id/brandname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="打折啦"
+        android:textSize="15sp"
+        android:gravity="center|left"
+        android:paddingLeft="40dp"
+        android:layout_weight="6"
+        android:background="#e9e1e1"
+        android:textColor="#da7171"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#a9a6a6"
+        />
+</LinearLayout >

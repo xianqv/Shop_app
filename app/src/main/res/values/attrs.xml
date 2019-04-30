@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomToolBar">
+        <attr name="index_right_button" format="reference"></attr>
+        <attr name="isShowIndex_SearchView" format="boolean"/>
+        <attr name="rightButtonText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CartNumberView">
+        <attr name="value" format="integer|reference"/>
+        <attr name="minValue" format="integer|reference"/>
+        <attr name="maxValue" format="integer|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ChioesView">
+        <attr name="LeftImg" format="reference"/>
+        <attr name="Item_title" format="string"/>
+        <attr name="Item_Msg" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="SecondItemChiose">
+        <attr name="item_title" format="string"/>
+        <attr name="hand_img" format="boolean"/>
+        <attr name="item_msg" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="frameDrawable" format="reference|color"/>
+        <attr name="stateDrawable" format="reference|color"/>
+        <attr name="stateMaskDrawable" format="reference|color"/>
+        <attr name="sliderDrawable" format="reference|color"/>
+        <attr name="withTextInterval" format="dimension"/>
+    </declare-styleable>
+</resources>

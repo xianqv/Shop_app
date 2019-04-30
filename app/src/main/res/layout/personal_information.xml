@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <com.example.administrator.igoushop_app.widget.CustomToolBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        app:navigationIcon="@drawable/icon_back"
+        app:title="个人信息"
+        />
+    <com.example.administrator.igoushop_app.widget.UserDefineScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:background="#fafafa">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <com.example.administrator.igoushop_app.widget.SecondItemChiose
+                android:id="@+id/user_hand_img"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:hand_img="true"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="#e4e3e3"
+                android:layout_gravity="right"/>
+            <com.example.administrator.igoushop_app.widget.SecondItemChiose
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                app:hand_img="false"
+                app:item_title="用户名"
+                app:item_msg="心中的日月"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="#e4e3e3"
+                android:layout_gravity="right"/>
+            <com.example.administrator.igoushop_app.widget.SecondItemChiose
+                android:id="@+id/user_sex"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                app:hand_img="false"
+                app:item_title="性别     "
+                app:item_msg="男"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="#e4e3e3"
+                android:layout_gravity="right"/>
+            <com.example.administrator.igoushop_app.widget.SecondItemChiose
+                android:id="@+id/user_address"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                app:hand_img="false"
+                app:item_title="收货地址"
+                app:item_msg="xxxxxxxxxx.."
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="#e4e3e3"
+                android:layout_gravity="right"/>
+        </LinearLayout>
+        </com.example.administrator.igoushop_app.widget.UserDefineScrollView>
+</LinearLayout>

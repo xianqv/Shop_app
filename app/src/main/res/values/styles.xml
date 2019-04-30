@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+    </style>
+
+    <style name="search_view">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:background">@drawable/home_toolbar_search</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!--<style name="Theme_Animation_Activity_RightInRightOut" parent="android:Theme.Light">-->
+        <!--<item name="android:windowAnimationStyle">@style/ActivityChangeAnimation</item>-->
+    <!--</style>-->
+    <!--<style name="ActivityChangeAnimation" parent="@android:style/Animation.Activity">-->
+        <!--<item name="android:activityOpenEnterAnimation">@anim/right_in</item>-->
+        <!--<item name="android:activityCloseEnterAnimation">@anim/left_in</item>-->
+        <!--<item name="android:activityOpenExitAnimation">@anim/left_out</item>-->
+        <!--<item name="android:activityCloseExitAnimation">@anim/right_out</item>-->
+    <!--</style>-->
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_in_from_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_out_to_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_in_from_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_out_to_right</item>
+    </style>
+
+    <style name="ThemeActivity">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+
+</resources>

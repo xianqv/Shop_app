@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.example.administrator.igoushop_app.widget.CustomToolBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        app:navigationIcon="@drawable/icon_back"
+        app:title="设置       "
+        ></com.example.administrator.igoushop_app.widget.CustomToolBar>
+
+    <com.example.administrator.igoushop_app.widget.UserDefineScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:background="#efeded">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <com.example.administrator.igoushop_app.widget.ChioesView
+            android:id="@+id/userinfo"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            app:LeftImg="@mipmap/h_icon"
+            android:gravity="center"
+            app:Item_title="个人信息"
+
+            android:layout_marginTop="20dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="#dedbdb"/>
+        <com.example.administrator.igoushop_app.widget.ChioesView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            app:LeftImg="@mipmap/safe_icon"
+            app:Item_title="账户安全 "
+            />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:background="#dedbdb"/>
+            <com.example.administrator.igoushop_app.widget.ChioesView
+                android:id="@+id/message_setting"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                app:LeftImg="@mipmap/mes_icon"
+                app:Item_title="消息通知提醒"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:background="#dedbdb"/>
+            <com.example.administrator.igoushop_app.widget.ChioesView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                app:LeftImg="@mipmap/about_icon"
+                app:Item_title="关于我们"
+                android:layout_marginTop="20dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:background="#dedbdb"/>
+            <com.example.administrator.igoushop_app.widget.ChioesView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                app:LeftImg="@mipmap/ques_icon"
+                app:Item_title="问题反馈"/>
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:background="@drawable/logout_bg"
+                android:text="注销"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"/>
+        </LinearLayout>
+    </com.example.administrator.igoushop_app.widget.UserDefineScrollView>
+</LinearLayout>

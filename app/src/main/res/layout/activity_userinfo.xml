@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/userinfo_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="                   用户信息"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        app:navigationIcon="@drawable/icon_back"></android.support.v7.widget.Toolbar>
+
+    <com.example.administrator.igoushop_app.widget.UserDefineScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:background="#efeded">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:padding="4dp"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        >
+        <TextView
+            android:id="@+id/tv_zy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"
+            android:text="用户姓名:" />
+        <TextView
+            android:background="@null"
+            android:id="@+id/tv_zy_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:gravity="right"
+            android:text="--"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/tv_zy"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_click"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/imageView2" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#dedbdb"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:padding="4dp"
+        android:visibility="visible"
+
+        android:background="@android:color/white"
+        >
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"
+            android:text="电话:" />
+        <TextView
+            android:background="@null"
+            android:id="@+id/tv_phone_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:gravity="right"
+            android:text="--"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/tv_phone"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_click"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#dedbdb"/>
+        </LinearLayout>
+    </com.example.administrator.igoushop_app.widget.UserDefineScrollView>
+</LinearLayout>

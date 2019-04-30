@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e7e5e5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@mipmap/be"
+        android:orientation="vertical"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#fdfbfb"
+            android:src="@drawable/default_head"
+            >
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/logout_bg"
+            android:text="登录"
+            android:textColor="#fcf9f9"
+            android:textSize="17sp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mc马超mc"
+            android:textSize="25sp"
+            android:textColor="#fffefe"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <com.example.administrator.igoushop_app.widget.ChioesView
+            android:id="@+id/orders"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:LeftImg="@mipmap/orders"
+            app:Item_title="我的订单"
+
+            ></com.example.administrator.igoushop_app.widget.ChioesView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="#e4e3e3"
+            android:layout_gravity="right"/>
+
+        <com.example.administrator.igoushop_app.widget.ChioesView
+            android:id="@+id/store"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:LeftImg="@mipmap/shouchang"
+            app:Item_title="我的收藏"
+            ></com.example.administrator.igoushop_app.widget.ChioesView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="#e4e3e3"
+            android:layout_gravity="right"/>
+        <com.example.administrator.igoushop_app.widget.ChioesView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:LeftImg="@mipmap/dizhi"
+            app:Item_title="收货地址"
+            ></com.example.administrator.igoushop_app.widget.ChioesView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="#e4e3e3"
+            android:layout_gravity="right"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="#e4e3e3"
+            android:layout_gravity="right"
+            />
+        <com.example.administrator.igoushop_app.widget.ChioesView
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:LeftImg="@mipmap/shezhi"
+            app:Item_title="设置"
+            android:layout_marginTop="20dp"
+            ></com.example.administrator.igoushop_app.widget.ChioesView>
+    </LinearLayout>
+
+</LinearLayout>
