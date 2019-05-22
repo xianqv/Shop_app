@@ -5,16 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.administrator.igoushop_app.widget.CustomToolBar
+    <com.example.administrator.igoushop_app_test.widget.CustomToolBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
         android:background="?attr/colorPrimaryDark"
         app:navigationIcon="@drawable/icon_back"
         app:title="消息提示设置"
-        ></com.example.administrator.igoushop_app.widget.CustomToolBar>
+        ></com.example.administrator.igoushop_app_test.widget.CustomToolBar>
 
-    <com.example.administrator.igoushop_app.widget.UserDefineScrollView
+    <com.example.administrator.igoushop_app_test.widget.UserDefineScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="false"
@@ -40,7 +40,7 @@
             android:paddingLeft="10dp"
             />
 
-        <com.example.administrator.igoushop_app.tools.SwitchButton
+        <com.example.administrator.igoushop_app_test.tools.SwitchButton
             android:id="@+id/message_sound_switch"
             android:layout_width="80dp"
             android:layout_height="43dp"
@@ -73,7 +73,7 @@
                  android:paddingLeft="10dp"
                  />
 
-             <com.example.administrator.igoushop_app.tools.SwitchButton
+             <com.example.administrator.igoushop_app_test.tools.SwitchButton
                  android:id="@+id/message_switch"
                  android:layout_width="80dp"
                  android:layout_height="43dp"
@@ -86,5 +86,5 @@
 
 
      </LinearLayout>
-    </com.example.administrator.igoushop_app.widget.UserDefineScrollView>
+    </com.example.administrator.igoushop_app_test.widget.UserDefineScrollView>
 </LinearLayout>

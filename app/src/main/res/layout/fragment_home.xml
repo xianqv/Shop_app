@@ -68,7 +68,7 @@
         android:layout_width="match_parent"
         android:layout_height="120dp"
         />
-    <com.example.administrator.igoushop_app.widget.CustomGridView
+    <com.example.administrator.igoushop_app_test.widget.CustomGridView
         android:id="@+id/server_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -76,7 +76,7 @@
         android:numColumns="5"
         android:verticalSpacing="9dp"
         android:background="@color/white"
-        ></com.example.administrator.igoushop_app.widget.CustomGridView>
+        ></com.example.administrator.igoushop_app_test.widget.CustomGridView>
 
     <!--<android.support.v7.widget.RecyclerView-->
         <!--android:id="@+id/recyclerview"-->
@@ -86,7 +86,7 @@
         <!--&gt;-->
     <!--</android.support.v7.widget.RecyclerView>-->
 
-      <com.example.administrator.igoushop_app.widget.HomeWebView
+      <com.example.administrator.igoushop_app_test.widget.HomeWebView
           android:id="@+id/webview"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"/>

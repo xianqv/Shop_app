@@ -221,7 +221,7 @@
             android:textSize="16sp"
             android:paddingLeft="10dp"
             />
-        <com.example.administrator.igoushop_app.widget.CartNumberView
+        <com.example.administrator.igoushop_app_test.widget.CartNumberView
             android:id="@+id/pronum"
             android:layout_width="0dp"
             android:layout_height="30dp"
@@ -230,7 +230,7 @@
             app:value="1"
             android:gravity="center"
             app:minValue="1"
-            ></com.example.administrator.igoushop_app.widget.CartNumberView>
+            ></com.example.administrator.igoushop_app_test.widget.CartNumberView>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"

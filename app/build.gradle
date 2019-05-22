@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "com.example.administrator.igoushop_app"
+        applicationId "com.example.administrator.igoushop_app_test"
         minSdkVersion 21
         targetSdkVersion 23
         versionCode 1
@@ -32,6 +32,21 @@ android {
         exclude'META-INF/ASL2.0'
     }
 
+
+
+
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                //这里修改apk文件名
+                def fileName = "IGou-dev.apk"
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+
+    }
 }
 
 dependencies {

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
    >
 
-    <com.example.administrator.igoushop_app.widget.CustomToolBar
+    <com.example.administrator.igoushop_app_test.widget.CustomToolBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
@@ -14,7 +14,7 @@
         app:navigationIcon="@drawable/icon_back"
         app:title="个人信息"
         />
-    <com.example.administrator.igoushop_app.widget.UserDefineScrollView
+    <com.example.administrator.igoushop_app_test.widget.UserDefineScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="false"
@@ -26,7 +26,7 @@
             android:orientation="vertical"
             android:layout_marginTop="15dp">
 
-            <com.example.administrator.igoushop_app.widget.SecondItemChiose
+            <com.example.administrator.igoushop_app_test.widget.SecondItemChiose
                 android:id="@+id/user_hand_img"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
@@ -37,7 +37,7 @@
                 android:layout_height="0.7dp"
                 android:background="#e4e3e3"
                 android:layout_gravity="right"/>
-            <com.example.administrator.igoushop_app.widget.SecondItemChiose
+            <com.example.administrator.igoushop_app_test.widget.SecondItemChiose
                 android:id="@+id/user_name"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
@@ -50,7 +50,7 @@
                 android:layout_height="0.7dp"
                 android:background="#e4e3e3"
                 android:layout_gravity="right"/>
-            <com.example.administrator.igoushop_app.widget.SecondItemChiose
+            <com.example.administrator.igoushop_app_test.widget.SecondItemChiose
                 android:id="@+id/user_sex"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
@@ -63,7 +63,7 @@
                 android:layout_height="0.7dp"
                 android:background="#e4e3e3"
                 android:layout_gravity="right"/>
-            <com.example.administrator.igoushop_app.widget.SecondItemChiose
+            <com.example.administrator.igoushop_app_test.widget.SecondItemChiose
                 android:id="@+id/user_address"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
@@ -78,5 +78,5 @@
                 android:background="#e4e3e3"
                 android:layout_gravity="right"/>
         </LinearLayout>
-        </com.example.administrator.igoushop_app.widget.UserDefineScrollView>
+        </com.example.administrator.igoushop_app_test.widget.UserDefineScrollView>
 </LinearLayout>

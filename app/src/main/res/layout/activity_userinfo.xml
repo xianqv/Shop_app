@@ -14,7 +14,7 @@
         android:background="?attr/colorPrimaryDark"
         app:navigationIcon="@drawable/icon_back"></android.support.v7.widget.Toolbar>
 
-    <com.example.administrator.igoushop_app.widget.UserDefineScrollView
+    <com.example.administrator.igoushop_app_test.widget.UserDefineScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="false"
@@ -111,5 +111,5 @@
         android:layout_marginRight="10dp"
         android:background="#dedbdb"/>
         </LinearLayout>
-    </com.example.administrator.igoushop_app.widget.UserDefineScrollView>
+    </com.example.administrator.igoushop_app_test.widget.UserDefineScrollView>
 </LinearLayout>

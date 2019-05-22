@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.administrator.igoushop_app.widget.CustomToolBar
+    <com.example.administrator.igoushop_app_test.widget.CustomToolBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
@@ -13,7 +13,7 @@
         app:navigationIcon="@drawable/icon_back"
         app:title="账号安全"
         />
-    <com.example.administrator.igoushop_app.widget.UserDefineScrollView
+    <com.example.administrator.igoushop_app_test.widget.UserDefineScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="false"
@@ -25,7 +25,7 @@
             android:background="#fafafa"
             android:layout_marginTop="15dp">
 
-            <com.example.administrator.igoushop_app.widget.SecondItemChiose
+            <com.example.administrator.igoushop_app_test.widget.SecondItemChiose
                 android:id="@+id/change_pwd"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
@@ -35,7 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1.0dp"
                 android:background="#dedbdb"/>
-            <com.example.administrator.igoushop_app.widget.SecondItemChiose
+            <com.example.administrator.igoushop_app_test.widget.SecondItemChiose
                 android:id="@+id/change_phone_number"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
@@ -47,6 +47,6 @@
                 android:background="#dedbdb"/>
 
         </LinearLayout>
-        </com.example.administrator.igoushop_app.widget.UserDefineScrollView>
+        </com.example.administrator.igoushop_app_test.widget.UserDefineScrollView>
 
 </LinearLayout>

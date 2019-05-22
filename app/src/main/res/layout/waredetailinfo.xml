@@ -133,7 +133,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <com.example.administrator.igoushop_app.widget.ChioesView
+                <com.example.administrator.igoushop_app_test.widget.ChioesView
                     android:id="@+id/pro_attribute"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -144,7 +144,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
                     android:background="#cec8c8"/>
-                <com.example.administrator.igoushop_app.widget.ChioesView
+                <com.example.administrator.igoushop_app_test.widget.ChioesView
                     android:id="@+id/pro_color_size"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
