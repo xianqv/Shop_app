@@ -64,6 +64,20 @@ android {
 //
 //    }
 
+
+
+//    android.applicationVariants.all {
+//        variant ->
+//            variant.outputs.each {
+//                output -> output.outputFile = new File(output.outputFile.parent, "app_${defaultConfig.applicationId }_"+ buildType.name + "_v${defaultConfig.versionName}-${releaseTime()}.apk");
+//            }
+//    }
+//    ①output.outputFile.parent表示生成apk的路径，这个是默认路径在项目/app/build/outpus/apk，当然我们可以自己写路径。
+//    ②defaultConfig.applicationId表示defaultConfig标签下的名称。
+//    ③buildType.name指编译类型，就是debug或者release
+//    ④defaultConfig.versionName表示在defaultConfig标签下写的版本号
+//    ⑤releaseTime()表示我们定义的得到日期的函数
+
 //3.0以后
     android.applicationVariants.all { variant ->
                 variant.outputs.all {
