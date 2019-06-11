@@ -9,12 +9,15 @@ buildscript {
             name 'Google'
         }
         google()
+        flatDir dirs: '/Users/haigang/Downloads/proguard6.0.3/lib'
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.1'
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath ':proguard:'
+
+
+
     }
 
 }
@@ -27,10 +30,194 @@ allprojects {
             url 'https://maven.google.com/'
             name 'Google'
         }
+
+
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+//嵌入式配置
+//task ('proguard', type: proguard.gradle.ProGuardTask) {
+//
+//
+//
+//    injars  'bin/classes'
+//    injars  'libs'
+//    outjars 'bin/classes-processed.jar'
+//
+//    libraryjars '/usr/local/android-sdk/platforms/android-27/android.jar'
+//
+//    printmapping 'bin/classes-processed.map'
+//
+//
+//    verbose
+//
+//
+//
+//    android
+//
+//    // The dex compiler ignores preverification information.
+//
+//    dontpreverify
+//
+//    // Reduce the size of the output some more.
+//
+//    repackageclasses ''
+//    allowaccessmodification
+//
+//    // Switch off some optimizations that trip older versions of the Dalvik VM.
+//
+//    optimizations '!code/simplification/arithmetic'
+//
+//    // Keep a fixed source file attribute and all line number tables to get line
+//    // numbers in the stack traces.
+//
+//    renamesourcefileattribute 'SourceFile'
+//    keepattributes 'SourceFile,LineNumberTable'
+//
+//
+//
+//    keepattributes '*Annotation*'
+//
+//    // Preserve all fundamental application classes.
+//
+//    keep 'public class * extends android.app.Activity'
+//    keep 'public class * extends android.app.Application'
+//    keep 'public class * extends android.app.Service'
+//    keep 'public class * extends android.content.BroadcastReceiver'
+//    keep 'public class * extends android.content.ContentProvider'
+//
+//    // Preserve all View implementations, their special context constructors, and
+//    // their setters.
+//
+//    keep 'public class * extends android.view.View { \
+//        public <init>(android.content.Context); \
+//        public <init>(android.content.Context, android.util.AttributeSet); \
+//        public <init>(android.content.Context, android.util.AttributeSet, int); \
+//        public void set*(...); \
+//    }'
+//
+//    // Preserve all classes that have special context constructors, and the
+//    // constructors themselves.
+//
+//    keepclasseswithmembers 'class * { \
+//        public <init>(android.content.Context, android.util.AttributeSet); \
+//    }'
+//
+//    // Preserve all classes that have special context constructors, and the
+//    // constructors themselves.
+//
+//    keepclasseswithmembers 'class * { \
+//        public <init>(android.content.Context, android.util.AttributeSet, int); \
+//    }'
+//
+//    // Preserve all possible onClick handlers.
+//
+//    keepclassmembers 'class * extends android.content.Context { \
+//       public void *(android.view.View); \
+//       public void *(android.view.MenuItem); \
+//    }'
+//
+//    // Preserve the special fields of all Parcelable implementations.
+//
+//    keepclassmembers 'class * implements android.os.Parcelable { \
+//        static android.os.Parcelable$Creator CREATOR; \
+//    }'
+//
+//    // Preserve static fields of inner classes of R classes that might be accessed
+//    // through introspection.
+//
+//    keepclassmembers 'class **.R$* { \
+//      public static <fields>; \
+//    }'
+//
+//    // Preserve annotated Javascript interface methods.
+//
+//    keepclassmembers 'class * { \
+//        @android.webkit.JavascriptInterface <methods>; \
+//    }'
+//
+//    // Preserve annotated and generated classes for Dagger.
+//
+//    keepclassmembers allowobfuscation: true, 'class * { \
+//        @dagger.** *; \
+//    }'
+//
+//    keep 'class **$$ModuleAdapter'
+//    keep 'class **$$InjectAdapter'
+//    keep 'class **$$StaticInjection'
+//
+//    if   ('class **$$ModuleAdapter')
+//    keep 'class <1>'
+//
+//    if   ('class **$$InjectAdapter')
+//    keep 'class <1>'
+//
+//    if  ('class **$$StaticInjection')
+//    keep 'class <1>'
+//
+//    keepnames 'class dagger.Lazy'
+//
+//    // Preserve annotated and generated classes for Butterknife.
+//
+//    keep 'class **$$ViewBinder { \
+//        public static void bind(...); \
+//        public static void unbind(...); \
+//    }'
+//
+//    if  ( 'class **$$ViewBinder')
+//    keep 'class <1>'
+//
+//    keep 'class **_ViewBinding { \
+//        <init>(<1>, android.view.View); \
+//    }'
+//
+//    if ( 'class **_ViewBinding')
+//    keep 'class <1>'
+//
+//
+//
+//    keepclassmembers allowobfuscation: true, 'class * { \
+//        @com.google.gson.annotations.SerializedName <fields>; \
+//    }'
+//
+//    keep allowobfuscation: true, '@interface com.google.gson.annotations.**'
+//
+//
+//
+//
+//    keep 'public interface com.android.vending.licensing.ILicensingService'
+//
+//    dontnote 'com.android.vending.licensing.ILicensingService'
+//
+//
+//
+//    dontwarn 'android.support.**'
+//
+//
+//
+//
+//
+//
+//
+//    keepclassmembers allowoptimization: true, 'enum * { \
+//        public static **[] values(); \
+//        public static ** valueOf(java.lang.String); \
+//    }'
+//
+//
+//
+//    keepclassmembers 'class * implements java.io.Serializable { \
+//        static final long serialVersionUID; \
+//        static final java.io.ObjectStreamField[] serialPersistentFields; \
+//        private void writeObject(java.io.ObjectOutputStream); \
+//        private void readObject(java.io.ObjectInputStream); \
+//        java.lang.Object writeReplace(); \
+//        java.lang.Object readResolve(); \
+//    }'
+//
+//
+//}
 

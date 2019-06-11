@@ -10,9 +10,26 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
+    lintOptions {
+        abortOnError false
+    }
+
     buildTypes {
-        release {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            // VersionName后缀
             minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -50,7 +67,7 @@ android {
 //3.0以后
     android.applicationVariants.all { variant ->
                 variant.outputs.all {
-                        outputFileName = "IGou-dev.apk"
+                        outputFileName = "IGou"+"-"+buildType.name+".apk"
                      }
              }
 }
