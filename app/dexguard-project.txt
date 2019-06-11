@@ -1,0 +1,3 @@
+##忽略项目中其他Module的警告 ############
+-dontwarn com.test.test.**
+-dontwarn com.squareup.okhttp.**

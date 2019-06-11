@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'dexguard'
+
 
 android {
     compileSdkVersion 23
@@ -18,19 +20,24 @@ android {
     buildTypes {
         debug {
             buildConfigField "boolean", "LOG_DEBUG", "true"
-            // VersionName后缀
+
             minifyEnabled false
             zipAlignEnabled false
             shrinkResources false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFile getDefaultDexGuardFile('dexguard-debug.pro')
+           // proguardFile 'dexguard-project.txt'
+
         }
         release {
             buildConfigField "boolean", "LOG_DEBUG", "false"
-            minifyEnabled true
-            zipAlignEnabled true
-            shrinkResources true
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
 
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFile getDefaultDexGuardFile('dexguard-release.pro')
+            //proguardFile 'dexguard-project.txt'
         }
     }
 
